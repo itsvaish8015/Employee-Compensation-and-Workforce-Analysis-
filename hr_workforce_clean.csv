@@ -1,0 +1,108 @@
+employee_id,employee_name,hire_date,job_title,min_salary,max_salary,salary,commission_pct,manager_id,manager_name,department_id,department_name,city,state_province,country_name,region_name,previous_jobs_count,hire_year,salary_band,has_commission,pay_range_position,pay_level
+100,Steven King,1987-06-17,President,20000,40000,24000,0.0,0.0,No Manager,90.0,Executive,Seattle,Washington,United States of America,Americas,0,1987,Very High,No,0.2,Below Midpoint
+101,Neena Kochhar,1989-09-21,Administration Vice President,15000,30000,17000,0.0,100.0,Steven King,90.0,Executive,Seattle,Washington,United States of America,Americas,2,1989,Very High,No,0.13,Below Midpoint
+102,Lex De Haan,1993-01-13,Administration Vice President,15000,30000,17000,0.0,100.0,Steven King,90.0,Executive,Seattle,Washington,United States of America,Americas,1,1993,Very High,No,0.13,Below Midpoint
+103,Alexander Hunold,1990-01-03,Programmer,4000,10000,9000,0.0,102.0,Lex De Haan,60.0,IT,Southlake,Texas,United States of America,Americas,0,1990,Very High,No,0.83,Above Midpoint
+104,Bruce Ernst,1991-05-21,Programmer,4000,10000,6000,0.0,103.0,Alexander Hunold,60.0,IT,Southlake,Texas,United States of America,Americas,0,1991,Medium,No,0.33,Below Midpoint
+105,David Austin,1997-06-25,Programmer,4000,10000,4800,0.0,103.0,Alexander Hunold,60.0,IT,Southlake,Texas,United States of America,Americas,0,1997,Medium,No,0.13,Below Midpoint
+106,Valli Pataballa,1998-02-05,Programmer,4000,10000,4800,0.0,103.0,Alexander Hunold,60.0,IT,Southlake,Texas,United States of America,Americas,0,1998,Medium,No,0.13,Below Midpoint
+107,Diana Lorentz,1999-02-07,Programmer,4000,10000,4200,0.0,103.0,Alexander Hunold,60.0,IT,Southlake,Texas,United States of America,Americas,0,1999,Medium,No,0.03,Below Midpoint
+108,Nancy Greenberg,1994-08-17,Finance Manager,8200,16000,12000,0.0,101.0,Neena Kochhar,100.0,Finance,Seattle,Washington,United States of America,Americas,0,1994,Very High,No,0.49,Below Midpoint
+109,Daniel Faviet,1994-08-16,Accountant,4200,9000,9000,0.0,108.0,Nancy Greenberg,100.0,Finance,Seattle,Washington,United States of America,Americas,0,1994,Very High,No,1.0,Above Midpoint
+110,John Chen,1997-09-28,Accountant,4200,9000,8200,0.0,108.0,Nancy Greenberg,100.0,Finance,Seattle,Washington,United States of America,Americas,0,1997,High,No,0.83,Above Midpoint
+111,Ismael Sciarra,1997-09-30,Accountant,4200,9000,7700,0.0,108.0,Nancy Greenberg,100.0,Finance,Seattle,Washington,United States of America,Americas,0,1997,High,No,0.73,Above Midpoint
+112,Jose Manuel Urman,1998-03-07,Accountant,4200,9000,7800,0.0,108.0,Nancy Greenberg,100.0,Finance,Seattle,Washington,United States of America,Americas,0,1998,High,No,0.75,Above Midpoint
+113,Luis Popp,1999-12-07,Accountant,4200,9000,6900,0.0,108.0,Nancy Greenberg,100.0,Finance,Seattle,Washington,United States of America,Americas,0,1999,High,No,0.56,Above Midpoint
+114,Den Raphaely,1994-12-07,Purchasing Manager,8000,15000,11000,0.0,100.0,Steven King,30.0,Purchasing,Seattle,Washington,United States of America,Americas,1,1994,Very High,No,0.43,Below Midpoint
+115,Alexander Khoo,1995-05-18,Purchasing Clerk,2500,5500,3100,0.0,114.0,Den Raphaely,30.0,Purchasing,Seattle,Washington,United States of America,Americas,0,1995,Low,No,0.2,Below Midpoint
+116,Shelli Baida,1997-12-24,Purchasing Clerk,2500,5500,2900,0.0,114.0,Den Raphaely,30.0,Purchasing,Seattle,Washington,United States of America,Americas,0,1997,Low,No,0.13,Below Midpoint
+117,Sigal Tobias,1997-07-24,Purchasing Clerk,2500,5500,2800,0.0,114.0,Den Raphaely,30.0,Purchasing,Seattle,Washington,United States of America,Americas,0,1997,Low,No,0.1,Below Midpoint
+118,Guy Himuro,1998-11-15,Purchasing Clerk,2500,5500,2600,0.0,114.0,Den Raphaely,30.0,Purchasing,Seattle,Washington,United States of America,Americas,0,1998,Low,No,0.03,Below Midpoint
+119,Karen Colmenares,1999-08-10,Purchasing Clerk,2500,5500,2500,0.0,114.0,Den Raphaely,30.0,Purchasing,Seattle,Washington,United States of America,Americas,0,1999,Low,No,0.0,Below Midpoint
+120,Matthew Weiss,1996-07-18,Stock Manager,5500,8500,8000,0.0,100.0,Steven King,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1996,High,No,0.83,Above Midpoint
+121,Adam Fripp,1997-04-10,Stock Manager,5500,8500,8200,0.0,100.0,Steven King,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,High,No,0.9,Above Midpoint
+122,Payam Kaufling,1995-05-01,Stock Manager,5500,8500,7900,0.0,100.0,Steven King,50.0,Shipping,South San Francisco,California,United States of America,Americas,1,1995,High,No,0.8,Above Midpoint
+123,Shanta Vollman,1997-10-10,Stock Manager,5500,8500,6500,0.0,100.0,Steven King,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,High,No,0.33,Below Midpoint
+124,Kevin Mourgos,1999-11-16,Stock Manager,5500,8500,5800,0.0,100.0,Steven King,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1999,Medium,No,0.1,Below Midpoint
+125,Julia Nayer,1997-07-16,Stock Clerk,2000,5000,3200,0.0,120.0,Matthew Weiss,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,Medium,No,0.4,Below Midpoint
+126,Irene Mikkilineni,1998-09-28,Stock Clerk,2000,5000,2700,0.0,120.0,Matthew Weiss,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Low,No,0.23,Below Midpoint
+127,James Landry,1999-01-14,Stock Clerk,2000,5000,2400,0.0,120.0,Matthew Weiss,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1999,Low,No,0.13,Below Midpoint
+128,Steven Markle,2000-03-08,Stock Clerk,2000,5000,2200,0.0,120.0,Matthew Weiss,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,2000,Low,No,0.07,Below Midpoint
+129,Laura Bissot,1997-08-20,Stock Clerk,2000,5000,3300,0.0,121.0,Adam Fripp,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,Medium,No,0.43,Below Midpoint
+130,Mozhe Atkinson,1997-10-30,Stock Clerk,2000,5000,2800,0.0,121.0,Adam Fripp,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,Low,No,0.27,Below Midpoint
+131,James Marlow,1997-02-16,Stock Clerk,2000,5000,2500,0.0,121.0,Adam Fripp,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,Low,No,0.17,Below Midpoint
+132,TJ Olson,1999-04-10,Stock Clerk,2000,5000,2100,0.0,121.0,Adam Fripp,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1999,Low,No,0.03,Below Midpoint
+133,Jason Mallin,1996-06-14,Stock Clerk,2000,5000,3300,0.0,122.0,Payam Kaufling,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1996,Medium,No,0.43,Below Midpoint
+134,Michael Rogers,1998-08-26,Stock Clerk,2000,5000,2900,0.0,122.0,Payam Kaufling,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Low,No,0.3,Below Midpoint
+135,Ki Gee,1999-12-12,Stock Clerk,2000,5000,2400,0.0,122.0,Payam Kaufling,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1999,Low,No,0.13,Below Midpoint
+136,Hazel Philtanker,2000-02-06,Stock Clerk,2000,5000,2200,0.0,122.0,Payam Kaufling,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,2000,Low,No,0.07,Below Midpoint
+137,Renske Ladwig,1995-07-14,Stock Clerk,2000,5000,3600,0.0,123.0,Shanta Vollman,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1995,Medium,No,0.53,Above Midpoint
+138,Stephen Stiles,1997-10-26,Stock Clerk,2000,5000,3200,0.0,123.0,Shanta Vollman,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,Medium,No,0.4,Below Midpoint
+139,John Seo,1998-02-12,Stock Clerk,2000,5000,2700,0.0,123.0,Shanta Vollman,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Low,No,0.23,Below Midpoint
+140,Joshua Patel,1998-04-06,Stock Clerk,2000,5000,2500,0.0,123.0,Shanta Vollman,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Low,No,0.17,Below Midpoint
+141,Trenna Rajs,1995-10-17,Stock Clerk,2000,5000,3500,0.0,124.0,Kevin Mourgos,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1995,Medium,No,0.5,Below Midpoint
+142,Curtis Davies,1997-01-29,Stock Clerk,2000,5000,3100,0.0,124.0,Kevin Mourgos,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,Low,No,0.37,Below Midpoint
+143,Randall Matos,1998-03-15,Stock Clerk,2000,5000,2600,0.0,124.0,Kevin Mourgos,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Low,No,0.2,Below Midpoint
+144,Peter Vargas,1998-07-09,Stock Clerk,2000,5000,2500,0.0,124.0,Kevin Mourgos,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Low,No,0.17,Below Midpoint
+145,John Russell,1996-10-01,Sales Manager,10000,20000,14000,0.4,100.0,Steven King,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1996,Very High,Yes,0.4,Below Midpoint
+146,Karen Partners,1997-01-05,Sales Manager,10000,20000,13500,0.3,100.0,Steven King,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1997,Very High,Yes,0.35,Below Midpoint
+147,Alberto Errazuriz,1997-03-10,Sales Manager,10000,20000,12000,0.3,100.0,Steven King,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1997,Very High,Yes,0.2,Below Midpoint
+148,Gerald Cambrault,1999-10-15,Sales Manager,10000,20000,11000,0.3,100.0,Steven King,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1999,Very High,Yes,0.1,Below Midpoint
+149,Eleni Zlotkey,2000-01-29,Sales Manager,10000,20000,10500,0.2,100.0,Steven King,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,2000,Very High,Yes,0.05,Below Midpoint
+150,Peter Tucker,1997-01-30,Sales Representative,6000,12000,10000,0.3,145.0,John Russell,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1997,Very High,Yes,0.67,Above Midpoint
+151,David Bernstein,1997-03-24,Sales Representative,6000,12000,9500,0.25,145.0,John Russell,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1997,Very High,Yes,0.58,Above Midpoint
+152,Peter Hall,1997-08-20,Sales Representative,6000,12000,9000,0.25,145.0,John Russell,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1997,Very High,Yes,0.5,Below Midpoint
+153,Christopher Olsen,1998-03-30,Sales Representative,6000,12000,8000,0.2,145.0,John Russell,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1998,High,Yes,0.33,Below Midpoint
+154,Nanette Cambrault,1998-12-09,Sales Representative,6000,12000,7500,0.2,145.0,John Russell,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1998,High,Yes,0.25,Below Midpoint
+155,Oliver Tuvault,1999-11-23,Sales Representative,6000,12000,7000,0.15,145.0,John Russell,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1999,High,Yes,0.17,Below Midpoint
+156,Janette King,1996-01-30,Sales Representative,6000,12000,10000,0.35,146.0,Karen Partners,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1996,Very High,Yes,0.67,Above Midpoint
+157,Patrick Sully,1996-03-04,Sales Representative,6000,12000,9500,0.35,146.0,Karen Partners,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1996,Very High,Yes,0.58,Above Midpoint
+158,Allan McEwen,1996-08-01,Sales Representative,6000,12000,9000,0.35,146.0,Karen Partners,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1996,Very High,Yes,0.5,Below Midpoint
+159,Lindsey Smith,1997-03-10,Sales Representative,6000,12000,8000,0.3,146.0,Karen Partners,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1997,High,Yes,0.33,Below Midpoint
+160,Louise Doran,1997-12-15,Sales Representative,6000,12000,7500,0.3,146.0,Karen Partners,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1997,High,Yes,0.25,Below Midpoint
+161,Sarath Sewall,1998-11-03,Sales Representative,6000,12000,7000,0.25,146.0,Karen Partners,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1998,High,Yes,0.17,Below Midpoint
+162,Clara Vishney,1997-11-11,Sales Representative,6000,12000,10500,0.25,147.0,Alberto Errazuriz,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1997,Very High,Yes,0.75,Above Midpoint
+163,Danielle Greene,1999-03-19,Sales Representative,6000,12000,9500,0.15,147.0,Alberto Errazuriz,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1999,Very High,Yes,0.58,Above Midpoint
+164,Mattea Marvins,2000-01-24,Sales Representative,6000,12000,7200,0.1,147.0,Alberto Errazuriz,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,2000,High,Yes,0.2,Below Midpoint
+165,David Lee,2000-02-23,Sales Representative,6000,12000,6800,0.1,147.0,Alberto Errazuriz,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,2000,High,Yes,0.13,Below Midpoint
+166,Sundar Ande,2000-03-24,Sales Representative,6000,12000,6400,0.1,147.0,Alberto Errazuriz,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,2000,High,Yes,0.07,Below Midpoint
+167,Amit Banda,2000-04-21,Sales Representative,6000,12000,6200,0.1,147.0,Alberto Errazuriz,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,2000,Medium,Yes,0.03,Below Midpoint
+168,Lisa Ozer,1997-03-11,Sales Representative,6000,12000,11500,0.25,148.0,Gerald Cambrault,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1997,Very High,Yes,0.92,Above Midpoint
+169,Harrison Bloom,1998-03-23,Sales Representative,6000,12000,10000,0.2,148.0,Gerald Cambrault,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1998,Very High,Yes,0.67,Above Midpoint
+170,Tayler Fox,1998-01-24,Sales Representative,6000,12000,9600,0.2,148.0,Gerald Cambrault,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1998,Very High,Yes,0.6,Above Midpoint
+171,William Smith,1999-02-23,Sales Representative,6000,12000,7400,0.15,148.0,Gerald Cambrault,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1999,High,Yes,0.23,Below Midpoint
+172,Elizabeth Bates,1999-03-24,Sales Representative,6000,12000,7300,0.15,148.0,Gerald Cambrault,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1999,High,Yes,0.22,Below Midpoint
+173,Sundita Kumar,2000-04-21,Sales Representative,6000,12000,6100,0.1,148.0,Gerald Cambrault,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,2000,Medium,Yes,0.02,Below Midpoint
+174,Ellen Abel,1996-05-11,Sales Representative,6000,12000,11000,0.3,149.0,Eleni Zlotkey,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1996,Very High,Yes,0.83,Above Midpoint
+175,Alyssa Hutton,1997-03-19,Sales Representative,6000,12000,8800,0.25,149.0,Eleni Zlotkey,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1997,High,Yes,0.47,Below Midpoint
+176,Jonathon Taylor,1998-03-24,Sales Representative,6000,12000,8600,0.2,149.0,Eleni Zlotkey,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,2,1998,High,Yes,0.43,Below Midpoint
+177,Jack Livingston,1998-04-23,Sales Representative,6000,12000,8400,0.2,149.0,Eleni Zlotkey,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,1998,High,Yes,0.4,Below Midpoint
+178,Kimberely Grant,1999-05-24,Sales Representative,6000,12000,7000,0.15,149.0,Eleni Zlotkey,0.0,Unassigned,Unassigned,Unassigned,Unassigned,Unassigned,0,1999,High,Yes,0.17,Below Midpoint
+179,Charles Johnson,2000-01-04,Sales Representative,6000,12000,6200,0.1,149.0,Eleni Zlotkey,80.0,Sales,Oxford,Oxford,United Kingdom,Europe,0,2000,Medium,Yes,0.03,Below Midpoint
+180,Winston Taylor,1998-01-24,Shipping Clerk,2500,5500,3200,0.0,120.0,Matthew Weiss,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Medium,No,0.23,Below Midpoint
+181,Jean Fleaur,1998-02-23,Shipping Clerk,2500,5500,3100,0.0,120.0,Matthew Weiss,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Low,No,0.2,Below Midpoint
+182,Martha Sullivan,1999-06-21,Shipping Clerk,2500,5500,2500,0.0,120.0,Matthew Weiss,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1999,Low,No,0.0,Below Midpoint
+183,Girard Geoni,2000-02-03,Shipping Clerk,2500,5500,2800,0.0,120.0,Matthew Weiss,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,2000,Low,No,0.1,Below Midpoint
+184,Nandita Sarchand,1996-01-27,Shipping Clerk,2500,5500,4200,0.0,121.0,Adam Fripp,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1996,Medium,No,0.57,Above Midpoint
+185,Alexis Bull,1997-02-20,Shipping Clerk,2500,5500,4100,0.0,121.0,Adam Fripp,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,Medium,No,0.53,Above Midpoint
+186,Julia Dellinger,1998-06-24,Shipping Clerk,2500,5500,3400,0.0,121.0,Adam Fripp,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Medium,No,0.3,Below Midpoint
+187,Anthony Cabrio,1999-02-07,Shipping Clerk,2500,5500,3000,0.0,121.0,Adam Fripp,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1999,Low,No,0.17,Below Midpoint
+188,Kelly Chung,1997-06-14,Shipping Clerk,2500,5500,3800,0.0,122.0,Payam Kaufling,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,Medium,No,0.43,Below Midpoint
+189,Jennifer Dilly,1997-08-13,Shipping Clerk,2500,5500,3600,0.0,122.0,Payam Kaufling,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,Medium,No,0.37,Below Midpoint
+190,Timothy Gates,1998-07-11,Shipping Clerk,2500,5500,2900,0.0,122.0,Payam Kaufling,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Low,No,0.13,Below Midpoint
+191,Randall Perkins,1999-12-19,Shipping Clerk,2500,5500,2500,0.0,122.0,Payam Kaufling,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1999,Low,No,0.0,Below Midpoint
+192,Sarah Bell,1996-02-04,Shipping Clerk,2500,5500,4000,0.0,123.0,Shanta Vollman,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1996,Medium,No,0.5,Below Midpoint
+193,Britney Everett,1997-03-03,Shipping Clerk,2500,5500,3900,0.0,123.0,Shanta Vollman,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1997,Medium,No,0.47,Below Midpoint
+194,Samuel McCain,1998-07-01,Shipping Clerk,2500,5500,3200,0.0,123.0,Shanta Vollman,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Medium,No,0.23,Below Midpoint
+195,Vance Jones,1999-03-17,Shipping Clerk,2500,5500,2800,0.0,123.0,Shanta Vollman,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1999,Low,No,0.1,Below Midpoint
+196,Alana Walsh,1998-04-24,Shipping Clerk,2500,5500,3100,0.0,124.0,Kevin Mourgos,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Low,No,0.2,Below Midpoint
+197,Kevin Feeney,1998-05-23,Shipping Clerk,2500,5500,3000,0.0,124.0,Kevin Mourgos,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1998,Low,No,0.17,Below Midpoint
+198,Donald OConnell,1999-06-21,Shipping Clerk,2500,5500,2600,0.0,124.0,Kevin Mourgos,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,1999,Low,No,0.03,Below Midpoint
+199,Douglas Grant,2000-01-13,Shipping Clerk,2500,5500,2600,0.0,124.0,Kevin Mourgos,50.0,Shipping,South San Francisco,California,United States of America,Americas,0,2000,Low,No,0.03,Below Midpoint
+200,Jennifer Whalen,1987-09-17,Administration Assistant,3000,6000,4400,0.0,101.0,Neena Kochhar,10.0,Administration,Seattle,Washington,United States of America,Americas,2,1987,Medium,No,0.47,Below Midpoint
+201,Michael Hartstein,1996-02-17,Marketing Manager,9000,15000,13000,0.0,100.0,Steven King,20.0,Marketing,Toronto,Ontario,Canada,Americas,1,1996,Very High,No,0.67,Above Midpoint
+202,Pat Fay,1997-08-17,Marketing Representative,4000,9000,6000,0.0,201.0,Michael Hartstein,20.0,Marketing,Toronto,Ontario,Canada,Americas,0,1997,Medium,No,0.4,Below Midpoint
+203,Susan Mavris,1994-06-07,Human Resources Representative,4000,9000,6500,0.0,101.0,Neena Kochhar,40.0,Human Resources,London,Unassigned,United Kingdom,Europe,0,1994,High,No,0.5,Below Midpoint
+204,Hermann Baer,1994-06-07,Public Relations Representative,4500,10500,10000,0.0,101.0,Neena Kochhar,70.0,Public Relations,Munich,Bavaria,Germany,Europe,0,1994,Very High,No,0.92,Above Midpoint
+205,Shelley Higgins,1994-06-07,Accounting Manager,8200,16000,12000,0.0,101.0,Neena Kochhar,110.0,Accounting,Seattle,Washington,United States of America,Americas,0,1994,Very High,No,0.49,Below Midpoint
+206,William Gietz,1994-06-07,Public Accountant,4200,9000,8300,0.0,205.0,Shelley Higgins,110.0,Accounting,Seattle,Washington,United States of America,Americas,0,1994,High,No,0.85,Above Midpoint
