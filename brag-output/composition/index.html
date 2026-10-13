@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Employee Compensation &amp; Workforce Analysis — Launch Brag</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #05080f; }
+      #root {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #f4f7fc;
+      }
+      .bg { position: absolute; inset: 0; background: radial-gradient(1300px 780px at 50% 38%, #10203f 0%, #0a1628 55%, #05080f 100%); }
+      .grid {
+        position: absolute; inset: -2px;
+        background-image:
+          linear-gradient(to right, rgba(242, 177, 52, 0.08) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(242, 177, 52, 0.08) 1px, transparent 1px);
+        background-size: 80px 80px;
+        mask-image: radial-gradient(1200px 720px at 50% 45%, #000 30%, transparent 80%);
+        -webkit-mask-image: radial-gradient(1200px 720px at 50% 45%, #000 30%, transparent 80%);
+      }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .inner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+
+      .dot { position: absolute; width: 12px; height: 12px; border-radius: 50%; background: #f2b134; box-shadow: 0 0 14px rgba(242, 177, 52, 0.8); }
+      .dot.t { background: #2dd4bf; box-shadow: 0 0 14px rgba(45, 212, 191, 0.8); }
+
+      .hook-line { font-size: 122px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.06; text-transform: uppercase; }
+      .gold { color: #f2b134; text-shadow: 0 0 44px rgba(242, 177, 52, 0.5); }
+      .teal { color: #2dd4bf; text-shadow: 0 0 44px rgba(45, 212, 191, 0.45); }
+
+      .badge {
+        font-size: 26px; font-weight: 700; letter-spacing: 0.4em; text-transform: uppercase;
+        color: #f6cf7e; border: 1px solid rgba(242, 177, 52, 0.5); border-radius: 999px; padding: 14px 30px; margin-bottom: 40px;
+      }
+      .reveal-title { font-size: 104px; font-weight: 900; line-height: 1.02; letter-spacing: -0.025em; text-transform: uppercase; max-width: 1560px; }
+      .reveal-title span { display: block; }
+      .reveal-title span:nth-child(2) { color: #f2b134; }
+      .sub { margin-top: 32px; font-size: 36px; color: #a7b4cc; }
+      .uline { margin-top: 32px; width: 380px; height: 5px; background: linear-gradient(90deg, #f2b134, #2dd4bf); transform-origin: left center; }
+
+      .eyebrow { font-size: 30px; font-weight: 700; letter-spacing: 0.38em; text-transform: uppercase; color: #f2b134; margin-bottom: 46px; }
+      .caption { margin-top: 46px; font-size: 34px; color: #a7b4cc; max-width: 1400px; }
+
+      .stages { display: grid; grid-template-columns: repeat(4, 340px); gap: 24px; }
+      .stage {
+        background: #0d1930; border: 1px solid rgba(242, 177, 52, 0.28); border-radius: 16px;
+        padding: 24px 26px; text-align: left;
+      }
+      .stage .no { font-size: 26px; font-weight: 800; color: #f2b134; letter-spacing: 0.1em; }
+      .stage .nm { font-size: 34px; font-weight: 700; margin-top: 6px; color: #eef3fb; }
+
+      .stat { display: flex; align-items: baseline; font-weight: 900; letter-spacing: -0.03em; line-height: 1; }
+      .stat #num { font-size: 320px; }
+      .stat .suf { font-size: 90px; color: #f2b134; margin-left: 14px; align-self: flex-end; padding-bottom: 40px; }
+      .statlabel { margin-top: 6px; font-size: 52px; font-weight: 600; letter-spacing: 0.34em; text-transform: uppercase; color: #f6cf7e; }
+
+      .cards { display: flex; gap: 22px; }
+      .fcard {
+        width: 344px; background: #0d1930; border: 1px solid rgba(45, 212, 191, 0.28); border-radius: 18px;
+        padding: 24px 24px 18px; text-align: left;
+      }
+      .fcard .name { font-family: ui-monospace, monospace; font-size: 26px; font-weight: 700; color: #2dd4bf; }
+      .fcard .viz { height: 84px; margin: 16px 0 12px; display: flex; align-items: center; }
+      .fcard .role { font-size: 22px; color: #c4d0e6; line-height: 1.3; }
+
+      .outro-title { font-size: 92px; font-weight: 900; line-height: 1.03; letter-spacing: -0.02em; text-transform: uppercase; max-width: 1600px; }
+      .outro-title span { display: block; }
+      .outro-title span:nth-child(2) { color: #f2b134; font-size: 76px; }
+      .outro-tag { margin-top: 28px; font-size: 42px; color: #dbe6f5; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="20.5" data-width="1920" data-height="1080">
+      <div class="bg"><div class="grid"></div></div>
+
+      <!-- Scene 1 — Hook -->
+      <section class="scene clip" id="s1" data-start="0" data-duration="3.5" data-track-index="1">
+        <div class="inner" id="s1-inner">
+          <div class="dot" id="d1" style="top: 180px; left: 300px"></div>
+          <div class="dot t" id="d2" style="top: 240px; left: 1480px"></div>
+          <div class="dot" id="d3" style="top: 320px; left: 700px"></div>
+          <div class="dot t" id="d4" style="top: 800px; left: 1120px"></div>
+          <div class="dot" id="d5" style="top: 860px; left: 560px"></div>
+          <div class="dot t" id="d6" style="top: 900px; left: 1460px"></div>
+          <div class="hook-line" id="hook1">Every salary leaves a trace.</div>
+          <div class="hook-line" id="hook2">Here are <span class="gold">all 107</span> of them.</div>
+        </div>
+      </section>
+
+      <!-- Scene 2 — Reveal -->
+      <section class="scene clip" id="s2" data-start="3.5" data-duration="3.5" data-track-index="2">
+        <div class="inner" id="s2-inner">
+          <div class="badge" id="s2badge">End-to-End Data Analytics</div>
+          <h1 class="reveal-title">
+            <span id="s2t1">Employee Compensation &amp;</span>
+            <span id="s2t2">Workforce Analysis</span>
+          </h1>
+          <div class="sub" id="s2sub">Python → SQL → Power BI. 107 employees, one clear picture.</div>
+          <div class="uline" id="s2line"></div>
+        </div>
+      </section>
+
+      <!-- Scene 3 — Pipeline -->
+      <section class="scene clip" id="s3" data-start="7" data-duration="3.5" data-track-index="3">
+        <div class="inner" id="s3-inner">
+          <div class="eyebrow" id="s3eyebrow">From Raw Table to Decision</div>
+          <div class="stages">
+            <div class="stage" id="st1"><div class="no">01</div><div class="nm">Python</div></div>
+            <div class="stage" id="st2"><div class="no">02</div><div class="nm">Cleaning</div></div>
+            <div class="stage" id="st3"><div class="no">03</div><div class="nm">Feature Engineering</div></div>
+            <div class="stage" id="st4"><div class="no">04</div><div class="nm">EDA</div></div>
+            <div class="stage" id="st5"><div class="no">05</div><div class="nm">MySQL</div></div>
+            <div class="stage" id="st6"><div class="no">06</div><div class="nm">SQL Analysis</div></div>
+            <div class="stage" id="st7"><div class="no">07</div><div class="nm">Power BI</div></div>
+            <div class="stage" id="st8"><div class="no">08</div><div class="nm">Report</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scene 4 — SQL hero -->
+      <section class="scene clip" id="s4" data-start="10.5" data-duration="3" data-track-index="4">
+        <div class="inner" id="s4-inner">
+          <div class="eyebrow" id="s4eyebrow">20 Business Questions, Answered in SQL</div>
+          <div class="stat"><span id="num">0</span><span class="suf">queries</span></div>
+          <div class="statlabel" id="s4label">answered</div>
+          <div class="caption" id="s4sub">Payroll by country · top-paid roles · salary bands · commission gaps · team sizes.</div>
+        </div>
+      </section>
+
+      <!-- Scene 5 — Engineered features -->
+      <section class="scene clip" id="s5" data-start="13.5" data-duration="3.9" data-track-index="5">
+        <div class="inner" id="s5-inner">
+          <div class="eyebrow" id="s5eyebrow">Five Engineered Features Power the Dashboard</div>
+          <div class="cards">
+            <div class="fcard" id="fc1">
+              <div class="name">hire_year</div>
+              <div class="viz">
+                <svg width="252" height="72" viewBox="0 0 252 72">
+                  <rect x="6" y="46" width="26" height="22" rx="4" fill="#2dd4bf" opacity="0.55"/>
+                  <rect x="46" y="38" width="26" height="30" rx="4" fill="#2dd4bf" opacity="0.65"/>
+                  <rect x="86" y="30" width="26" height="38" rx="4" fill="#2dd4bf" opacity="0.75"/>
+                  <rect x="126" y="34" width="26" height="34" rx="4" fill="#f2b134" opacity="0.85"/>
+                  <rect x="166" y="22" width="26" height="46" rx="4" fill="#f2b134" opacity="0.95"/>
+                  <rect x="206" y="12" width="26" height="56" rx="4" fill="#f2b134"/>
+                </svg>
+              </div>
+              <div class="role">Hiring trend by year</div>
+            </div>
+            <div class="fcard" id="fc2">
+              <div class="name">salary_band</div>
+              <div class="viz">
+                <svg width="252" height="72" viewBox="0 0 252 72">
+                  <rect x="6" y="14" width="240" height="44" rx="10" fill="#0a1b2e" stroke="#2dd4bf" stroke-width="1.5"/>
+                  <rect x="12" y="20" width="150" height="32" rx="7" fill="#2dd4bf" opacity="0.35"/>
+                  <rect x="168" y="20" width="72" height="32" rx="7" fill="#f2b134" opacity="0.7"/>
+                </svg>
+              </div>
+              <div class="role">Pay grouped into bands</div>
+            </div>
+            <div class="fcard" id="fc3">
+              <div class="name">has_commission</div>
+              <div class="viz">
+                <svg width="252" height="72" viewBox="0 0 252 72">
+                  <rect x="70" y="16" width="112" height="40" rx="20" fill="#14524c" stroke="#2dd4bf" stroke-width="1.5"/>
+                  <circle cx="160" cy="36" r="15" fill="#2dd4bf"/>
+                </svg>
+              </div>
+              <div class="role">Commission vs base pay</div>
+            </div>
+            <div class="fcard" id="fc4">
+              <div class="name">pay_range_position</div>
+              <div class="viz">
+                <svg width="252" height="72" viewBox="0 0 252 72">
+                  <line x1="16" y1="36" x2="236" y2="36" stroke="#3a4863" stroke-width="6" stroke-linecap="round"/>
+                  <line x1="16" y1="36" x2="176" y2="36" stroke="#2dd4bf" stroke-width="6" stroke-linecap="round"/>
+                  <circle cx="176" cy="36" r="12" fill="#f2b134"/>
+                </svg>
+              </div>
+              <div class="role">Position inside job range</div>
+            </div>
+            <div class="fcard" id="fc5">
+              <div class="name">pay_level</div>
+              <div class="viz">
+                <svg width="252" height="72" viewBox="0 0 252 72">
+                  <rect x="6" y="8" width="240" height="26" rx="8" fill="#0a1b2e" stroke="#3a4863" stroke-width="1.5"/>
+                  <text x="20" y="27" fill="#9fb0cc" font-size="16" font-family="Inter, system-ui, sans-serif">Below midpoint</text>
+                  <rect x="6" y="40" width="240" height="26" rx="8" fill="#14524c" stroke="#f2b134" stroke-width="1.5"/>
+                  <text x="20" y="59" fill="#f6cf7e" font-size="16" font-family="Inter, system-ui, sans-serif">Above midpoint</text>
+                </svg>
+              </div>
+              <div class="role">Above or below range mid</div>
+            </div>
+          </div>
+          <div class="caption" id="s5cap">Engineered in Python. Explored in SQL. Visualised in Power BI.</div>
+        </div>
+      </section>
+
+      <!-- Scene 6 — Outro -->
+      <section class="scene clip" id="s6" data-start="17.4" data-duration="3.1" data-track-index="6">
+        <div class="inner" id="s6-inner">
+          <div class="outro-title">
+            <span id="s6t1">Employee Compensation &amp;</span>
+            <span id="s6t2">Workforce Analysis</span>
+          </div>
+          <div class="outro-tag" id="s6tag">Turn payroll into policy.</div>
+          <div class="uline" id="s6line"></div>
+        </div>
+      </section>
+
+      <audio id="music" data-start="0" data-duration="20.5" data-track-index="20" data-volume="1"
+        src="assets/music/happy-beats-business-moves-vol-12-by-ende-dot-app.mp3"></audio>
+      <audio id="sfx-1" data-start="0.15" data-duration="0.12" data-track-index="21" data-volume="0.7"
+        src="assets/sfx/impact/impactSoft_medium_000.ogg"></audio>
+      <audio id="sfx-2" data-start="3.7" data-duration="1.2" data-track-index="22" data-volume="0.65"
+        src="assets/sfx/impact/impactBell_heavy_000.ogg"></audio>
+      <audio id="sfx-3" data-start="7.62" data-duration="0.11" data-track-index="23" data-volume="0.55"
+        src="assets/sfx/interface/drop_001.ogg"></audio>
+      <audio id="sfx-4" data-start="8.5" data-duration="0.19" data-track-index="24" data-volume="0.6"
+        src="assets/sfx/interface/drop_002.ogg"></audio>
+      <audio id="sfx-5" data-start="9.62" data-duration="0.19" data-track-index="25" data-volume="0.65"
+        src="assets/sfx/interface/drop_003.ogg"></audio>
+      <audio id="sfx-6" data-start="10.9" data-duration="0.12" data-track-index="26" data-volume="0.65"
+        src="assets/sfx/impact/impactMetal_medium_002.ogg"></audio>
+      <audio id="sfx-7" data-start="13.95" data-duration="0.19" data-track-index="27" data-volume="0.65"
+        src="assets/sfx/impact/impactSoft_medium_001.ogg"></audio>
+      <audio id="sfx-8" data-start="17.45" data-duration="0.30" data-track-index="28" data-volume="0.7"
+        src="assets/sfx/impact/impactBell_heavy_004.ogg"></audio>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      /* Scene 1 — hook */
+      tl.fromTo("#music", { volume: 0 }, { volume: 0.35, duration: 0.8, ease: "power2.out" }, 0);
+      tl.fromTo(["#d1", "#d2", "#d3", "#d4", "#d5", "#d6"], { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, stagger: 0.12, ease: "power2.out" }, 0.1);
+      tl.to(["#d1", "#d3", "#d5"], { y: -26, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0.4);
+      tl.to(["#d2", "#d4", "#d6"], { y: 24, duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0.4);
+      tl.fromTo("#hook1", { y: 46, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power3.out" }, 0.2);
+      tl.fromTo("#hook2", { y: 46, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power3.out" }, 0.9);
+      tl.to("#s1-inner", { opacity: 0, duration: 0.4, ease: "power2.in" }, 3.1);
+
+      /* Scene 2 — reveal */
+      tl.fromTo("#s2-inner", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 3.5);
+      tl.fromTo("#s2badge", { y: -22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 3.7);
+      tl.fromTo("#s2t1", { y: 54, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 3.82);
+      tl.fromTo("#s2t2", { y: 54, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 4.05);
+      tl.fromTo("#s2sub", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 4.6);
+      tl.fromTo("#s2line", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power3.inOut" }, 4.7);
+      tl.to("#s2-inner", { opacity: 0, duration: 0.4, ease: "power2.in" }, 6.6);
+
+      /* Scene 3 — pipeline */
+      tl.fromTo("#s3-inner", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 7.0);
+      tl.fromTo("#s3eyebrow", { y: -18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 7.2);
+      const stages = ["#st1","#st2","#st3","#st4","#st5","#st6","#st7","#st8"];
+      // beat-grid: 8 chips cascade on the pulse
+      tl.fromTo(stages, { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, stagger: 0.13, ease: "power2.out" }, 7.64);
+      tl.to(["#st1","#st3","#st5","#st7"], { borderColor: "rgba(45,212,191,0.5)", duration: 0.3, repeat: 1, yoyo: true }, 8.3);
+      tl.to("#s3-inner", { opacity: 0, duration: 0.4, ease: "power2.in" }, 10.1);
+
+      /* Scene 4 — SQL hero */
+      tl.fromTo("#s4-inner", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 10.5);
+      tl.fromTo("#s4eyebrow", { y: -18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 10.7);
+      const statProxy = { v: 0 };
+      const numEl = document.getElementById("num");
+      // beat-locked: count lands on strong cue 10.93s
+      tl.to(statProxy, { v: 20, duration: 0.75, ease: "power2.out", onUpdate: () => { numEl.textContent = Math.round(statProxy.v); } }, 10.93);
+      tl.fromTo("#num", { y: 30 }, { y: 0, duration: 0.7, ease: "power3.out" }, 10.93);
+      tl.fromTo("#s4label", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 11.4);
+      tl.fromTo("#s4sub", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 11.9);
+      tl.to("#s4-inner", { opacity: 0, duration: 0.4, ease: "power2.in" }, 13.1);
+
+      /* Scene 5 — engineered features */
+      tl.fromTo("#s5-inner", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 13.5);
+      tl.fromTo("#s5eyebrow", { y: -18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 13.7);
+      const cards = ["#fc1","#fc2","#fc3","#fc4","#fc5"];
+      // beat-grid: cards pop on the pulse
+      tl.fromTo(cards, { scale: 0.9, y: 24, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.45, stagger: 0.14, ease: "back.out(1.4)" }, 14.0);
+      tl.fromTo("#s5cap", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 15.0);
+      tl.to("#s5-inner", { opacity: 0, duration: 0.4, ease: "power2.in" }, 17.0);
+
+      /* Scene 6 — outro */
+      tl.fromTo("#s6-inner", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 17.4);
+      tl.fromTo("#s6t1", { scale: 1.16, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power3.out" }, 17.47);
+      tl.fromTo("#s6t2", { scale: 1.16, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power3.out" }, 17.62);
+      tl.fromTo("#s6tag", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 18.3);
+      tl.fromTo("#s6line", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power3.inOut" }, 18.56);
+      tl.to("#music", { volume: 0, duration: 1.1, ease: "power2.in" }, 19.4);
+      tl.to("#s6-inner", { opacity: 0, duration: 0.4, ease: "power2.in" }, 20.1);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

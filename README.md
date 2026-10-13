@@ -1,4 +1,9 @@
 # Employee-Compensation-and-Workforce-Analysis-
+
+<p align="center">
+  <video src="brag-output/brag.mp4" poster="brag-output/brag.jpg" width="720" controls muted></video>
+</p>
+
 End-to-end data analytics project using Python, SQL, MySQL, and Power BI to analyze workforce distribution, salary patterns, and payroll.
 
 **Dataset → Python → Cleaning → Feature Engineering → EDA → MySQL → SQL Analysis → Power BI → Dashboard → Report**

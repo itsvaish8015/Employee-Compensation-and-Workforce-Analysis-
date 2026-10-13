@@ -1,0 +1,11 @@
+Payroll isn't just a cost column — it's 107 people, and every pattern inside them.
+
+I built an end-to-end HR analytics project: a Python pipeline cleans a 107-row × 20-column workforce dataset, engineers five new fields (hire_year, salary_band, has_commission, pay_range_position, pay_level), runs EDA, then loads MySQL where 20 SQL business questions get answered — payroll by country, top-paid roles, salary bands, commission gaps, manager team sizes and more. It all feeds a Power BI dashboard and a written report.
+
+Python → Cleaning → Feature Engineering → EDA → MySQL → SQL Analysis → Power BI → Report.
+
+Built with Python, SQL, MySQL, and Power BI.
+
+The goal: turn payroll into policy.
+
+#DataAnalytics #SQL #PowerBI #Python #MySQL #HRAnalytics #DataScience
